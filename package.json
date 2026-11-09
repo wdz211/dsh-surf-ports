@@ -1,0 +1,51 @@
+{
+  "name": "dsh-surf-ports",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Four small DeepSeek Harness tools: chat-slang lexicon, token/cost ledger, sticker picking, file snapshot.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "src",
+    "README.md",
+    "ATTRIBUTION.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "license": "MIT",
+  "author": "wdz211",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdz211/dsh-surf-ports.git"
+  },
+  "homepage": "https://github.com/wdz211/dsh-surf-ports#readme",
+  "bugs": {
+    "url": "https://github.com/wdz211/dsh-surf-ports/issues"
+  },
+  "attribution": {
+    "upstream": "https://github.com/Mieksido/surfcore",
+    "upstreamLicense": "MIT",
+    "portedFiles": [
+      "src/model-prices.js",
+      "src/sticker-semantics.js",
+      "src/slang-learner.js",
+      "src/md-to-plain.js",
+      "src/token-ledger.js",
+      "src/token-budget.js",
+      "src/dsh-port.js",
+      "src/config-stamps.js"
+    ]
+  }
+}
